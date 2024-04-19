@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 999;
+    padding: 0 40px;
+    background: transparent;
+    transition: all ease 0.3s;
+}
+
+.header.collapsed {
+    background-color: #ffffff; 
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: red;
+}
+
+.header-right {
+    justify-content: flex-end;
+    flex: 1;
+    position: relative; 
+}
+
+.header-logo a,
+.header-user-img a {
+    text-decoration: none;
+}
+
+.header-logo a {
+    color: red; 
+}
+
+.header-user-img {
+    height: 30px;
+}
+
+.header-logo img,
+.header-user-img img {
+    height: 100%;
+    width: auto;
+}
+
+.header-user-img img {
+    border-radius: 3px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 200px;
+    margin-top:70px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+    color:red;
+}

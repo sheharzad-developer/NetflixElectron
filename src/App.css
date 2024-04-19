@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #fc6b02;
+    --yellow: #ffd700;
+
+    --gray: #e9e9e9;
+    --light-gray: #f0f0f0;
+    --dark-gray: #a1a1a4;
+
+    --transparent: transparent;
+
+    --freeze: #f6f6f6;
+    --blue: #8190a5;
+    --dark-blue: #47525e;
+    --pink: #f95f62;
+    --light-red: #ff7f7f;
+    --light-yellow: #eab079;
+    --light-green: #82c596;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white); /* Updated to use variable */
+    font-family: 'Roboto', sans-serif;
+    color: var(--white); /* Updated to use variable */
+    margin: 0;
+}
+
+.movie-list {
+    margin-top: -100px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black); /* Updated to use variable */
+    z-index: 99;
+}
+ 
+.loading img {
+    width: 60%;
+}

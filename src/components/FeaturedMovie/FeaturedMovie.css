@@ -1,0 +1,128 @@
+.featured-movie {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-vertical {
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured-horizontal {
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 100px 40px;
+}
+
+.featured-name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured-info {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.featured-points {
+    color: #46d369;
+}
+
+.featured-points,
+.featured-year,
+.featured-seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured-description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;  
+}
+
+.featured-buttons {
+    display: none;
+    margin-top: 15px;
+}
+
+.featured-watch-button,
+.featured-favorite-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    opacity: 1;
+    transition: ease .2s;
+}
+
+.featured-watch-button:hover,
+.featured-favorite-button:hover {
+    opacity: 70%;
+}
+
+.featured-watch-button {
+    background: white;
+    color: black;
+}
+
+.featured-favorite-button {
+    background: #333;
+    color: white;
+}
+
+.featured-genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+.star {
+    color: gray; 
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.star.filled {
+    color: gold; 
+}
+@media only screen and (max-width: 760px) {
+    .featured-movie{
+        height: 90vh;
+    }
+
+    .featured-name {
+        font-size: 40px;
+    }
+
+    .featured-info {
+        font-size: 16px;
+    }
+
+    .featured-description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featured-watch-button,
+    .featured-favorite-button {
+        font-size: 14px;
+    }
+
+    .featured-genres {
+        font-size: 14px;
+    }
+}
