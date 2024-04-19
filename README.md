@@ -15,6 +15,19 @@ Before starting, you will need to have the following tools installed on your mac
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Besides that, it's good to have a nice editor to work with the code, like [VSCode](https://code.visualstudio.com/)
 
+### Installation
+
+npm install
+
+If that doesn't work, clear the npm cache and try installing again:
+
+npm cache clean --force
+npm install
+
+Then, start the application:
+
+npm run start
+
 ### 🦄 Running the front-end
 
 ```bash
